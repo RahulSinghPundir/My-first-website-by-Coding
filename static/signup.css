@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: whitesmoke;
+    background: url("static/signupbg.jpg");
+}
+/* Navigation bar */
+.nav{
+    background-color:none;
+    height: 31px;
+    top: 0px;
+    width: inherit;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+}
+.nav i{
+    font-size: 25px;
+    margin: 4px 0;
+    margin-left: 10px;
+}
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav ul li{
+    margin: 6px;
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+}
+.nav ul li a:hover{
+    color:antiquewhite;
+    font-size: 21px;
+}
+
+/* form detailes */
+.form{
+    display: flex;
+    margin-top: 42px;
+    margin-bottom: 6px;
+    flex-direction: column;
+    color: black;
+    background: none;
+    
+}
+.form input{
+    padding: 12px;
+    margin: 19px;
+    border-bottom: 2px solid #ffffff;
+    border-radius: 20px;
+    background: none;
+    color: white;
+}
+.btn{
+    height: fit-content;
+    width: fit-content;
+    align-self: center;
+    padding: 3px 21px;
+    background: none;
+    cursor: pointer;
+}
+.btn:hover{
+    color: rgb(191, 241, 225);
+}
+
+/* Footer */
+.footer{
+    margin-top: 217px;
+    padding: 10px 0;
+    font-size: 15px;
+}

@@ -1,0 +1,25 @@
+doctype 
+html 
+    head 
+        title 
+            |Infiniters
+        style 
+            include ../static/signup.css
+    body 
+        nav.nav
+            <i class="fas fa-space-shuttle"></i>
+            ul 
+                li #[a(href="/") Home]
+                li #[a(href="/about") About]
+                li #[a(href="/contact") ContactUs]
+                li#signup #[a(href="/signup") Signup]
+        form(action='/signup',method='post' class="form")
+            input#name(type="text",name="name" placeholder="enter your name") 
+            input#email(type="email",name="email_id" placeholder="enter your email id") 
+            input#password(type="password",name="password" placeholder="enter your password") 
+            input#phone_no(type="number",name="phone_no" placeholder="enter your phone number") 
+            button(class="btn")
+                |Submit  
+        footer.footer 
+            | Copyright © 2019 #[a(href="/") infiniters.com] | All Rights Reserved     
+        <script src="https://kit.fontawesome.com/9258d5c248.js" crossorigin="anonymous"></script>
