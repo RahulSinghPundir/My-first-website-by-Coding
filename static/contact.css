@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: whitesmoke;
+    background:center / cover no-repeat url("/static/contactbg.jpg");
+}
+.bn{
+    background: none;
+}
+a{
+    background:none;
+}
+/* Navigation bar */
+.nav{
+    background:none;
+    height: 31px;
+    top: 0px;
+    width: inherit;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+}
+.nav i{
+    font-size: 25px;
+    margin: 4px 0;
+    margin-left: 10px;
+    background:none;
+}
+.nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background:none;
+}
+.nav ul li{
+    margin: 6px;
+    list-style: none;
+    background:none;
+    border-bottom: 2px solid #ffffff;
+    border-radius: 20px;
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    /* background:none; */
+}
+.nav ul li a:hover{
+    color:antiquewhite;
+    font-size: 21px;
+}
+
+/* Main */
+.main{
+    background: none;
+}
+.main h1{
+    margin: 55px 100px;
+    font-size: 40px;
+}
+.main h2{
+    margin: 30px 40px;
+    font-size: 20px;
+    border-bottom: 2px solid whitesmoke;
+    border-radius: 20px;
+}
+.main ul li {
+    font-size: 25px;
+    margin: 0 15%;
+}
+/* Footer */
+.footer{
+    background-color: rgb(103 101 101);
+    margin-top:24.4%;
+    height: 20px;
+    padding: 10px 0;
+    font-size: 15px;
+    background:none;
+}

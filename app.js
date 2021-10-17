@@ -2,7 +2,7 @@ const express= require("express");
 app=express();
 const path=require('path');
 var bodyParser = require("body-parser");
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:/signup',{useNewUrlParser: true});
 const port=1376;
 const signupSchema = new mongoose.Schema({
@@ -19,8 +19,6 @@ app.use('/static',express.static('static'));
 app.use(bodyParser.urlencoded({
   extended: true
 }));
-
-
 app.set('view engine','pug');
 app.set('views',path.join(__dirname,'views'));
 
@@ -47,7 +45,6 @@ app.post('/signup', (req, res)=>{
     res.status(400).send("item was not saved to the databse")
     })
 })
-
 app.listen(port,()=>{
     console.log(`we are succefully run in port ${port}`);
 })

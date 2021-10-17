@@ -2,47 +2,78 @@
     margin: 0px;
     padding: 0px;
     color: whitesmoke;
-    background: url("static/signupbg.jpg");
+    background:center / cover no-repeat url("/static/aboutbg.jpg");
+}
+a{
+    background:none;
 }
 /* Navigation bar */
 .nav{
-    background-color:none;
+    background:none;
     height: 31px;
     top: 0px;
     width: inherit;
     position: sticky;
     display: flex;
     flex-direction: row;
+    border-bottom: 2.5px solid #8662ff;
+    background-color: #eeecf7;
 }
 .nav i{
     font-size: 25px;
     margin: 4px 0;
     margin-left: 10px;
+    background:none;
+    color: black;
 }
 .nav ul{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    background:none;
 }
 .nav ul li{
     margin: 6px;
     list-style: none;
+    background:none;
+    border-bottom: 2px solid #181313;
+    border-radius: 20px;
 }
 .nav ul li a{
     text-decoration: none;
     padding: 10px;
     font-size: 20px;
+    color: black;
 }
 .nav ul li a:hover{
-    color:antiquewhite;
+    color:rgb(71, 67, 61);
     font-size: 21px;
+}
+
+/* Main */
+.main{
+    background: none;
+}
+.main h1{
+    margin: 95px 129px;
+    font-size: 40px;
+    background:none;
+}
+.main h2{
+    margin: 40px 50px;
+    font-size: 20px;
+    border-bottom: 2px solid whitesmoke;
+    border-radius: 20px;
+    background: none;
+
 }
 /* Footer */
 .footer{
     background-color: rgb(103 101 101);
-    margin-top: 60px;
+    margin-top:24.4%;
     height: 20px;
     padding: 10px 0;
     font-size: 15px;
+    background:none;
 }

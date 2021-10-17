@@ -1,25 +1,30 @@
 doctype 
 html 
     head 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         title 
             |Infiniters
         style 
             include ../static/signup.css
     body 
-        nav.nav
+        nav.bn.nav
             <i class="fas fa-space-shuttle"></i>
-            ul 
-                li #[a(href="/") Home]
-                li #[a(href="/about") About]
-                li #[a(href="/contact") ContactUs]
-                li#signup #[a(href="/signup") Signup]
-        form(action='/signup',method='post' class="form")
-            input#name(type="text",name="name" placeholder="enter your name") 
-            input#email(type="email",name="email_id" placeholder="enter your email id") 
-            input#password(type="password",name="password" placeholder="enter your password") 
-            input#phone_no(type="number",name="phone_no" placeholder="enter your phone number") 
-            button(class="btn")
+            ul.bn 
+               li #[a(href="/" class="navli" id="home") Home]
+                li #[a(href="/about" class="navli" id="about") About]
+                li #[a(href="/contact" class="navli" id="contact") ContactUs] 
+                li #[a(href="/signup" class="navli" id="signup") Signup]
+            <i class="fas fa-bars" id="hamburger"></i>
+            <i class="fas fa-times" id="cross"></i>
+
+        form.bn(action='/signup',method='post' class="form")
+            input#name(type="text",name="name" placeholder="Enter your name") 
+            input#email(type="email",name="email_id" placeholder="Enter your email id") 
+            input#password(type="password",name="password" placeholder="Set your password") 
+            input#phone_no(type="number",name="phone_no" placeholder="Enter your phone number") 
+            button.bn(class="btn")
                 |Submit  
-        footer.footer 
+        footer.footer.bn 
             | Copyright © 2019 #[a(href="/") infiniters.com] | All Rights Reserved     
         <script src="https://kit.fontawesome.com/9258d5c248.js" crossorigin="anonymous"></script>
+        script(src="/static/html.js") 

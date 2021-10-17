@@ -1,19 +1,30 @@
-html
-  head
-    title Harry Dance Academy
-    block scripts
-    block style
-  Body
-    div#logo
-    img(src="/static/img/logo.png")
-    | HDA
-    li #[a(href="/") Home]
-    li #[a(href="/") About]
-    li #[a(href="/") Services]
-    li #[a(href="/") Class Info]
-    li #[a(href="/") Contact Us]
-
-    block content
-    block foot
-      #footer
-        | Copyright 2019 HarryDance Academy | All Rights Reserved
+doctype 
+html 
+    head 
+        title 
+            |Infiniters
+        style 
+            include ../static/contact.css
+    body 
+        nav.nav.bn
+            <i class="fas fa-space-shuttle"></i>
+            ul.bn 
+                li.bn #[a(href="/") Home]
+                li.bn #[a(href="/about") About]
+                li.bn #[a(href="/contact") ContactUs]
+                li.bn#signup #[a(href="/signup") Signup] 
+        div.main.bn
+            h1.bn Welcome My name is Rahul Singh Pundir.
+            br
+            h2.bn I am from Raipur Dehradun Uttrakhand India.
+            br
+            h2.bn I am doing my btech from graphic era hill university.
+            br
+            h1.bn You can contact me by:   
+            br
+            ul.bn 
+              li.bn Gmail-Id:#[a(href="https://mail.google.com/") rahulsinghpundir85@gmail.com]
+              li.bn Phone no:7037702452  
+        footer.footer.bn 
+            | Copyright © 2019 #[a(href="/") infiniters.com] | All Rights Reserved     
+        <script src="https://kit.fontawesome.com/9258d5c248.js" crossorigin="anonymous"></script>

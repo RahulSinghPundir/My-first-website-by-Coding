@@ -7,14 +7,16 @@ html
         style 
             include ../static/style.css
     body 
-        nav.nav
+        nav.nav#nav
             <i class="fas fa-space-shuttle"></i>
             ul 
-                li #[a(href="/") Home]
-                li #[a(href="/about") About]
-                li #[a(href="/contact") ContactUs] 
-                li#signup #[a(href="/signup") Signup]
+                li #[a(href="/" class="navli" id="home") Home]
+                li #[a(href="/about" class="navli"  id="about") About]
+                li #[a(href="/contact" class="navli" id="contact") ContactUs] 
+                li #[a(href="/signup" class="navli" id="signup") Signup]
             <i class="fas fa-bars" id="hamburger"></i>
+            <i class="fas fa-times" id="cross"></i>
+        about_hover.about_hover
         div.main
             h1 INFINITERS 
             p Ready To Change the World With Us.    
@@ -30,3 +32,4 @@ html
         footer.footer 
             | Copyright © 2019 #[a(href="/") infiniters.com] | All Rights Reserved     
         <script src="https://kit.fontawesome.com/9258d5c248.js" crossorigin="anonymous"></script>
+        script(src="/static/html.js") 
